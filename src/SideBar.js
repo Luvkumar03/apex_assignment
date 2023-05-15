@@ -1,17 +1,17 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Home from "./Home"
-import Add_Scenario from './Add_Scenario'
-import Add_Vehicle from './Add_Vehicle'
-import All_Scenarios from './All_Scenarios'
-
+import styles from "./SideBar.module.css"
+import { SidebarData } from './SidebarData'
 export default function SideBar() {
   return (
-    <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/' element={<Add_Scenario/>}/>
-        <Route path='/' element={<Add_Vehicle/>}/>
-        <Route path='/' element={<All_Scenarios/>}/>
-    </Routes>
+    <div className={styles.SideBar}>
+      {SidebarData.map((value,key)=>{
+        return (
+          <li>
+            {value.title}
+          </li>
+        )
+    
+      })}
+    </div>
   )
 }
