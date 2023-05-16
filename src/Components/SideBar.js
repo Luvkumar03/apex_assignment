@@ -7,7 +7,12 @@ export default function SideBar() {
       <ul className={styles.SideBarList}>
       {SidebarData.map((value,key)=>{
         return (
-          <li className={styles.row}>
+          <li 
+          key={key}
+          className={styles.row}
+          id={window.location.pathname == value.link ? "active" : ""}
+          onClick={()=>{window.location.pathname=value.link}}
+          >
             <div id="title">
             {value.title}
             </div>

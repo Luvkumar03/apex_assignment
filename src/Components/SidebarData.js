@@ -1,4 +1,6 @@
 import React from "react";
+
+
 export const SidebarData = [
     {
         title: "Home",
@@ -6,15 +8,15 @@ export const SidebarData = [
     },
     {
         title: "Add_Scenario",
-        link:"./"
+        link:"./Add_Scenario"
     },
     {
         title: "All_Scenarios",
-        link:"./"
+        link:"./All_Scenarios"
     },
     {
         title: "Add_Vehicle",
-        link:"./"
+        link:"./Add_Vehicle"
     }
 
 ]
